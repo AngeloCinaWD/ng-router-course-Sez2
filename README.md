@@ -33,3 +33,13 @@ The application is visible at port 4200: [http://localhost:4200](http://localhos
 ## [ResolveFn angular check](https://angular.dev/api/router/ResolveFn?tab=usage-notes)
 
 ![resolver](/ResolveFn.png)
+
+## [ng generate resolver](https://www.digitalocean.com/community/tutorials/angular-route-resolvers)
+
+## [Router terminology](https://angular.dev/guide/routing/router-reference#router-terminology)
+
+## [ActivatedRoute](https://angular.dev/guide/routing/router-reference#activated-route)
+
+## [Router events](https://angular.dev/guide/routing/router-reference#router-events)
+
+![router-events-type](/router_event_type.png)

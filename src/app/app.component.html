@@ -53,7 +53,8 @@
 
   <messages></messages>
 
-  <loading></loading>
+  <!-- passo l'input al component per il caricamento dello spinner-->
+  <loading [detectRoutingOnGoing]="true"></loading>
 
   <!-- tramite direttiva router-outlet indichiamo ad angular dove va renderizzato il componente legato ad una certa rotta -->
   <router-outlet></router-outlet>

@@ -11,8 +11,10 @@
 
   <mat-card-actions class="course-actions">
     <!-- PATH VARIABLES -->
-    <!-- passo il path al routerLink in maniera dinamica, prendendolo dal course, utilizzo le [] perchè potrei passare un array con pià child route -->
-    <!-- posso passare un relative path -->
+    <!-- passo il path al routerLink in maniera dinamica, prendendolo dal course, utilizzo le [] perchè potrei passare un array con più path child -->
+    <!-- devo passare un relative path -->
+    <!--  se volessi aggiungere più path alla rotta  principale li scrivo come elemento dell'array, ad esempio la rotta pricipale è localhost:4200/courses,
+    passando i path tramite array ['pippo'] avrei localhost:4200/courses/pippo, oppure ['pippo', 'pluto'] avrei localhost:4200/courses/pippo/pluto -->
     <!-- dato che l'url è unico per ogni corso posso utizzarlo per renderizzare il corso che mi interessa, praticamente invece dell'id sto utilizzando proprietà  url del course-->
     <button
       mat-raised-button

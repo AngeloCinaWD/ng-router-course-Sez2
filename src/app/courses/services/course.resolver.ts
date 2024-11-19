@@ -3,6 +3,9 @@
 // il tipo è fornito dal componente target, in questo caso il tipo è un'istanza del Course component
 // questo resolver deve essere fornito inserendolo nei providers del routing module
 
+// l'interfaccia Resolve è deprecata
+// vedere ResolveFn di angular
+
 import {
   ActivatedRouteSnapshot,
   MaybeAsync,
@@ -29,7 +32,11 @@ export class CourseResolver implements Resolve<Course> {
   ): Observable<Course> {
     // l'url da passare a questo metodo lo dobbiamo estrarre dalla rotta
     // utilizziamo il parametro route e il metodo paramMap ed il nome che ho dato alla Path Variable al momento della descrizione della rotta (quello indicato con i :courseUrl)
+    // per accedere alle path variables utilizzo il paramMap
     const courseUrl: string = route.paramMap.get("courseUrl");
+
+    // per accedere ai query parameters utilizzo queryParamMap
+    // console.log(route.queryParamMap.get("couponCode"));
 
     //  in caso l'observable restituito dal metodo emetta più di un valore, lo posso costringere a emetterne uno solo e poi completarsi, tramite l'utiizzo dell'operatore RxJS first(), in questo caso non serve
     // return this.coursesService.loadCourseByUrl(courseUrl).pipe(first());

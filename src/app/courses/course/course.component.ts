@@ -16,7 +16,10 @@ export class CourseComponent implements OnInit {
   constructor(private route: ActivatedRoute) {}
 
   ngOnInit() {
-    //  accedo ai dati contenuti nel Router per quetsa rotta
+    //  accedo ai dati contenuti nel Router per questa rotta
+    // console.log(this.route.snapshot.data["course"]);
+    // console.log(this.route.snapshot.data.course);
+
     this.course = this.route.snapshot.data["course"];
   }
 }
